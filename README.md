@@ -8,13 +8,13 @@
 
 This is the **COMPLETE** ITF implementation that:
 
-✅ Downloads CLASS v3.3.4 from official repository  
-✅ Applies ALL 4 source code modifications automatically  
-✅ Compiles CLASS with ITF fully embedded  
-✅ Creates test parameter files  
-✅ Runs validation tests  
+-Downloads CLASS v3.3.4 from official repository  
+-Applies ALL 4 source code modifications automatically  
+-Compiles CLASS with ITF fully embedded  
+-Creates test parameter files  
+-Runs validation tests  
 
-**This is NOT post-hoc - ITF is computed natively in C code!**
+**The ITF is computed natively in C code!**
 
 ---
 
@@ -100,7 +100,7 @@ Set `has_itf = no` to get standard LCDM.
 | HSC S₈ | 3.0σ | 0.8σ | 2.2σ |
 | **Combined** | **8.4σ** | **1.0σ** | **7.4σ** |
 
-**87.6% of cosmological tension resolved!**
+**~90% of cosmological tension resolved**
 
 ---
 
@@ -161,7 +161,7 @@ make
 
 ## What's Embedded vs Post-Hoc
 
-### ✅ Fully Embedded (100%):
+### Fully Embedded (100%):
 
 **H₀ (Hubble constant):**
 - Modified in `background.c` line ~579
@@ -182,9 +182,9 @@ make
 - Transfer functions
 - Everything!
 
-### ❌ Nothing is Post-Hoc
+###  Nothing is PH
 
-This is **TRUE** CLASS integration, not corrections applied afterward.
+This is **CLASS integration** .
 
 ---
 
@@ -195,17 +195,17 @@ This is **TRUE** CLASS integration, not corrections applied afterward.
 **A = 0.0172** (Geometric constant)
 - Derived from: (δ/a)² = 0.13² void-averaged
 - From: 18 polarization states in EM lattice
-- **Not** a free parameter!
+- **Not** free
 
 **c_H = 5.08** (Hubble coefficient)
 - Derived from: Integrating modified Friedmann equation
 - ΔH₀/H₀ = ∫ c_H × A × f_void(z) dz
-- **Not** a free parameter!
+- **Not** free! dimensionless normalization factor that converts the microscopic lattice propagation speed into the macroscopic causal speed after geometric averaging over the dual-lattice degrees of freedom.
 
 **c_S = 3.3** (Structure coefficient)
 - Derived from: Integrating modified growth equation  
 - Δσ₈ = -∫ c_S × A × f_void(a) da
-- **Not** a free parameter!
+- **Not**  free 
 
 These coefficients **encode** all ITF physics:
 - Void fraction (68% of volume)
@@ -250,18 +250,18 @@ python3 --version
 
 ---
 
-## For MNRAS Reviewers
+## For Reviewers and Replication
 
 This package provides:
 
-1. ✅ **Complete source code** with all modifications
-2. ✅ **Automated installation** (one command)
-3. ✅ **Verification tests** (LCDM vs ITF)
-4. ✅ **Expected results** (for validation)
+1.  **Complete source code** with all modifications
+2.  **Automated installation** (one command)
+3.  **Verification tests** (LCDM vs ITF)
+4.  **Expected results** (for validation)
 
 To verify ITF implementation:
 ```bash
-# Install (5 minutes)
+# Install 
 bash install_itf_class_complete.sh
 
 # Check results match paper
@@ -284,7 +284,6 @@ If you use this ITF-modified CLASS, please cite:
 ```
 Salter, B. W. (2025). "The Hypothesis of the 5th Force of Physics: 
 Unifying All Through the Informational Topography Field (ITF)". 
-Monthly Notices of the Royal Astronomical Society, submitted.
 ```
 
 **CLASS Paper:**
@@ -301,7 +300,6 @@ JCAP, 2011(07), 034.
 
 **Bruno Wayne Salter**  
 Email: bwaynesalter@gmail.com  
-MNRAS Paper: MN-25-3020-P
 
 ---
 
@@ -311,4 +309,4 @@ ITF modifications released under same license as CLASS.
 
 ---
 
-**This is the COMPLETE CLASS source with ITF - ready for MNRAS submission!**
+**This is the COMPLETE CLASS source with ITF - !**
